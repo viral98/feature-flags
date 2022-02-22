@@ -8,30 +8,30 @@ To define one, add it to the `defaults` object. The value must be a boolean.
 Use it in TypeScript code:
 
 ```typescript
-import features from "../features";
+import features from "ts-feature-flags";
 
 function foo() {
 if (features.enabled("bar")) {
     doSomething();
-}
+ }
 }
 ```
 
 Use it in TSX:
 ```typescript
 <div>
-{features.enabled("bar") && <Something />}
+ {features.enabled("bar") && <Something />}
 </div>
 ```
 
 Use it in JavaScript code:
 ```javascript
-import features from "../features";
+import features from "ts-feature-flags";
 
 function foo() {
 if (features.bar)) {
     doSomething();
-}
+ }
 }
 ```
 
